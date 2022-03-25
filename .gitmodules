@@ -1,3 +1,3 @@
 [submodule "SFML"]
 	path = SFML
-	url = git@github.com:imp5imp5/SFML.git
+	url = https://github.com/imp5imp5/SFML.git
