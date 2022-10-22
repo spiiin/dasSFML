@@ -291,6 +291,8 @@ void Module_dasSFML::initFunctions_4() {
 	using _method_330 = das::das_call_member< sf::Rect<float> (sf::Text::*)() const,&sf::Text::getLocalBounds >;
 	addExtern<DAS_CALL_METHOD(_method_330)>(*this,lib,"getLocalBounds",SideEffects::worstDefault,"das_call_member< sf::Rect<float> (sf::Text::*)() const , &sf::Text::getLocalBounds >::invoke")
 		->args({"self"});
+
+	addCtorAndUsing<sf::Shader::CurrentTextureType>(*this, lib, "CurrentTextureType", "sf::Shader::CurrentTextureType");
 }
 }
 
